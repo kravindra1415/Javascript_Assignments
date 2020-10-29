@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript function to truncate certain words </title>
+</head>
+<body>
+    <script>
+        function truncate(str,no_of_words){
+            return str.split(" ").splice(0,no_of_words).join(" ");
+        }
+        document.write(truncate('Lorem Ipsum,is simply dummy text of the printing and typesetting industry',6));
+    </script>
+</body>
+</html>
